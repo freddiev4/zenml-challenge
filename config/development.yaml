@@ -1,0 +1,30 @@
+components:
+  artifact_store:
+    configuration: {}
+    flavor: local
+    id: dd6e05e2-1ec4-4c6f-8310-b3f8b55d4ea5
+    is_shared: false
+    name: default
+    type: artifact_store
+    user: 44fbed7a-9cf3-4bd2-8c8b-5e84573239ba
+  experiment_tracker:
+    configuration:
+      api_key: 'FILLMEIN'
+      entity: freddiev4
+      project_name: zenml_challenge
+    flavor: wandb
+    id: aba97e58-7bb7-451e-a77a-81e7bfc57904
+    is_shared: false
+    name: wandb_experiment_tracker
+    type: experiment_tracker
+    user: 44fbed7a-9cf3-4bd2-8c8b-5e84573239ba
+  orchestrator:
+    configuration: {}
+    flavor: local
+    id: af780df8-fa01-41a5-bcb1-5e128e9e6fe7
+    is_shared: false
+    name: default
+    type: orchestrator
+    user: 44fbed7a-9cf3-4bd2-8c8b-5e84573239ba
+stack_name: wandb-ops-setup
+zenml_version: 0.20.2
