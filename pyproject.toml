@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "zenml-challenge"
+version = "0.1.0"
+description = ""
+authors = ["Freddie Vargus <fjv41995@gmail.com>"]
+readme = "README.md"
+packages = [{include = "zenml_challenge"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+zenml = {extras = ["server", "stacks"], version = "^0.20.2"}
+scikit-learn = "^1.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
