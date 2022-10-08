@@ -10,6 +10,7 @@ packages = [{include = "zenml_challenge"}]
 python = ">=3.9,<3.10"
 zenml = {extras = ["server", "stacks"], version = "^0.20.2"}
 scikit-learn = "^1.1.2"
+wandb = "^0.13.4"
 
 
 [build-system]
