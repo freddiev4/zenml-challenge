@@ -1,0 +1,496 @@
+2022-10-08 01:57:33,782 INFO    MainThread:23891 [wandb_setup.py:_flush():68] Configure stats pid to 23891
+2022-10-08 01:57:33,783 INFO    MainThread:23891 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-08 01:57:33,783 INFO    MainThread:23891 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-08 01:57:33,783 INFO    MainThread:23891 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-08 01:57:33,783 INFO    MainThread:23891 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-08 01:57:33,784 INFO    MainThread:23891 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-08 01:57:33,784 INFO    MainThread:23891 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-08 01:57:33,784 INFO    MainThread:23891 [wandb_init.py:init():516] calling init triggers
+2022-10-08 01:57:33,784 INFO    MainThread:23891 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-08 01:57:33,785 INFO    MainThread:23891 [wandb_init.py:init():569] starting backend
+2022-10-08 01:57:33,785 INFO    MainThread:23891 [wandb_init.py:init():573] setting up manager
+2022-10-08 01:57:33,796 INFO    MainThread:23891 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-08 01:57:33,831 INFO    MainThread:23891 [wandb_init.py:init():580] backend started and connected
+2022-10-08 01:57:33,846 INFO    MainThread:23891 [wandb_init.py:init():658] updated telemetry
+2022-10-08 01:57:33,960 INFO    MainThread:23891 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-08 01:57:34,462 INFO    MainThread:23891 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-08 01:57:34,637 INFO    MainThread:23891 [wandb_run.py:_on_init():2004] got version response 
+2022-10-08 01:57:34,637 INFO    MainThread:23891 [wandb_init.py:init():728] starting run threads in backend
+2022-10-08 01:57:34,841 INFO    MainThread:23891 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-08 01:57:34,841 INFO    MainThread:23891 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-08 01:57:34,843 INFO    MainThread:23891 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-08 01:57:34,848 INFO    MainThread:23891 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-08 01:57:34,849 INFO    MainThread:23891 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-08 01:57:35,057 INFO    MainThread:23891 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/3bxh7q3b
+2022-10-08 01:57:35,057 INFO    MainThread:23891 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-08 01:57:35,058 INFO    MainThread:23891 [wandb_run.py:_restore():1932] restore
+2022-10-08 01:57:37,853 INFO    MainThread:23891 [wandb_run.py:_restore():1938] restore done
+2022-10-08 01:57:41,196 INFO    MainThread:23891 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-08 01:57:41,196 INFO    MainThread:23891 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-08 01:57:41,200 INFO    MainThread:23891 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-08 02:00:00,272 INFO    MainThread:24122 [wandb_setup.py:_flush():68] Configure stats pid to 24122
+2022-10-08 02:00:00,272 INFO    MainThread:24122 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-08 02:00:00,272 INFO    MainThread:24122 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-08 02:00:00,272 INFO    MainThread:24122 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-08 02:00:00,272 INFO    MainThread:24122 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-08 02:00:00,273 INFO    MainThread:24122 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-08 02:00:00,273 INFO    MainThread:24122 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-08 02:00:00,273 INFO    MainThread:24122 [wandb_init.py:init():516] calling init triggers
+2022-10-08 02:00:00,273 INFO    MainThread:24122 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-08 02:00:00,273 INFO    MainThread:24122 [wandb_init.py:init():569] starting backend
+2022-10-08 02:00:00,273 INFO    MainThread:24122 [wandb_init.py:init():573] setting up manager
+2022-10-08 02:00:00,284 INFO    MainThread:24122 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-08 02:00:00,294 INFO    MainThread:24122 [wandb_init.py:init():580] backend started and connected
+2022-10-08 02:00:00,308 INFO    MainThread:24122 [wandb_init.py:init():658] updated telemetry
+2022-10-08 02:00:00,394 INFO    MainThread:24122 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-08 02:00:00,784 INFO    MainThread:24122 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-08 02:00:00,939 INFO    MainThread:24122 [wandb_run.py:_on_init():2004] got version response 
+2022-10-08 02:00:00,939 INFO    MainThread:24122 [wandb_init.py:init():728] starting run threads in backend
+2022-10-08 02:00:01,120 INFO    MainThread:24122 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-08 02:00:01,120 INFO    MainThread:24122 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-08 02:00:01,122 INFO    MainThread:24122 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-08 02:00:01,126 INFO    MainThread:24122 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-08 02:00:01,128 INFO    MainThread:24122 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-08 02:00:01,374 INFO    MainThread:24122 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/9484m3st
+2022-10-08 02:00:01,374 INFO    MainThread:24122 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-08 02:00:01,375 INFO    MainThread:24122 [wandb_run.py:_restore():1932] restore
+2022-10-08 02:00:03,631 INFO    MainThread:24122 [wandb_run.py:_restore():1938] restore done
+2022-10-08 02:00:07,098 INFO    MainThread:24122 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-08 02:00:07,098 INFO    MainThread:24122 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-08 02:00:07,102 INFO    MainThread:24122 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-08 02:01:21,033 INFO    MainThread:24348 [wandb_setup.py:_flush():68] Configure stats pid to 24348
+2022-10-08 02:01:21,033 INFO    MainThread:24348 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-08 02:01:21,033 INFO    MainThread:24348 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-08 02:01:21,033 INFO    MainThread:24348 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-08 02:01:21,033 INFO    MainThread:24348 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-08 02:01:21,034 INFO    MainThread:24348 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-08 02:01:21,034 INFO    MainThread:24348 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-08 02:01:21,034 INFO    MainThread:24348 [wandb_init.py:init():516] calling init triggers
+2022-10-08 02:01:21,034 INFO    MainThread:24348 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-08 02:01:21,035 INFO    MainThread:24348 [wandb_init.py:init():569] starting backend
+2022-10-08 02:01:21,035 INFO    MainThread:24348 [wandb_init.py:init():573] setting up manager
+2022-10-08 02:01:21,047 INFO    MainThread:24348 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-08 02:01:21,058 INFO    MainThread:24348 [wandb_init.py:init():580] backend started and connected
+2022-10-08 02:01:21,077 INFO    MainThread:24348 [wandb_init.py:init():658] updated telemetry
+2022-10-08 02:01:21,172 INFO    MainThread:24348 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-08 02:01:21,568 INFO    MainThread:24348 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-08 02:01:21,722 INFO    MainThread:24348 [wandb_run.py:_on_init():2004] got version response 
+2022-10-08 02:01:21,722 INFO    MainThread:24348 [wandb_init.py:init():728] starting run threads in backend
+2022-10-08 02:01:21,891 INFO    MainThread:24348 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-08 02:01:21,891 INFO    MainThread:24348 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-08 02:01:21,893 INFO    MainThread:24348 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-08 02:01:21,898 INFO    MainThread:24348 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-08 02:01:21,900 INFO    MainThread:24348 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-08 02:01:22,116 INFO    MainThread:24348 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/25fgydf7
+2022-10-08 02:01:22,116 INFO    MainThread:24348 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-08 02:01:22,117 INFO    MainThread:24348 [wandb_run.py:_restore():1932] restore
+2022-10-08 02:01:24,403 INFO    MainThread:24348 [wandb_run.py:_restore():1938] restore done
+2022-10-08 02:01:27,854 INFO    MainThread:24348 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-08 02:01:27,855 INFO    MainThread:24348 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-08 02:01:27,858 INFO    MainThread:24348 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-08 02:02:48,506 INFO    MainThread:24549 [wandb_setup.py:_flush():68] Configure stats pid to 24549
+2022-10-08 02:02:48,506 INFO    MainThread:24549 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-08 02:02:48,506 INFO    MainThread:24549 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-08 02:02:48,507 INFO    MainThread:24549 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-08 02:02:48,507 INFO    MainThread:24549 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-08 02:02:48,507 INFO    MainThread:24549 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-08 02:02:48,507 INFO    MainThread:24549 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-08 02:02:48,507 INFO    MainThread:24549 [wandb_init.py:init():516] calling init triggers
+2022-10-08 02:02:48,508 INFO    MainThread:24549 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-08 02:02:48,508 INFO    MainThread:24549 [wandb_init.py:init():569] starting backend
+2022-10-08 02:02:48,508 INFO    MainThread:24549 [wandb_init.py:init():573] setting up manager
+2022-10-08 02:02:48,518 INFO    MainThread:24549 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-08 02:02:48,528 INFO    MainThread:24549 [wandb_init.py:init():580] backend started and connected
+2022-10-08 02:02:48,551 INFO    MainThread:24549 [wandb_init.py:init():658] updated telemetry
+2022-10-08 02:02:48,659 INFO    MainThread:24549 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-08 02:02:49,113 INFO    MainThread:24549 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-08 02:02:49,310 INFO    MainThread:24549 [wandb_run.py:_on_init():2004] got version response 
+2022-10-08 02:02:49,310 INFO    MainThread:24549 [wandb_init.py:init():728] starting run threads in backend
+2022-10-08 02:02:49,484 INFO    MainThread:24549 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-08 02:02:49,485 INFO    MainThread:24549 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-08 02:02:49,487 INFO    MainThread:24549 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-08 02:02:49,492 INFO    MainThread:24549 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-08 02:02:49,494 INFO    MainThread:24549 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-08 02:02:49,702 INFO    MainThread:24549 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/30v4qs0i
+2022-10-08 02:02:49,702 INFO    MainThread:24549 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-08 02:02:49,702 INFO    MainThread:24549 [wandb_run.py:_restore():1932] restore
+2022-10-08 02:02:51,997 INFO    MainThread:24549 [wandb_run.py:_restore():1938] restore done
+2022-10-08 02:02:55,768 INFO    MainThread:24549 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-08 02:02:55,768 INFO    MainThread:24549 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-08 02:02:55,772 INFO    MainThread:24549 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-08 02:07:02,742 INFO    MainThread:24751 [wandb_setup.py:_flush():68] Configure stats pid to 24751
+2022-10-08 02:07:02,743 INFO    MainThread:24751 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-08 02:07:02,743 INFO    MainThread:24751 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-08 02:07:02,743 INFO    MainThread:24751 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-08 02:07:02,743 INFO    MainThread:24751 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-08 02:07:02,743 INFO    MainThread:24751 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-08 02:07:02,743 INFO    MainThread:24751 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-08 02:07:02,743 INFO    MainThread:24751 [wandb_init.py:init():516] calling init triggers
+2022-10-08 02:07:02,744 INFO    MainThread:24751 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-08 02:07:02,744 INFO    MainThread:24751 [wandb_init.py:init():569] starting backend
+2022-10-08 02:07:02,744 INFO    MainThread:24751 [wandb_init.py:init():573] setting up manager
+2022-10-08 02:07:02,754 INFO    MainThread:24751 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-08 02:07:02,762 INFO    MainThread:24751 [wandb_init.py:init():580] backend started and connected
+2022-10-08 02:07:02,774 INFO    MainThread:24751 [wandb_init.py:init():658] updated telemetry
+2022-10-08 02:07:02,868 INFO    MainThread:24751 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-08 02:07:03,568 INFO    MainThread:24751 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-08 02:07:03,758 INFO    MainThread:24751 [wandb_run.py:_on_init():2004] got version response 
+2022-10-08 02:07:03,759 INFO    MainThread:24751 [wandb_init.py:init():728] starting run threads in backend
+2022-10-08 02:07:03,938 INFO    MainThread:24751 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-08 02:07:03,938 INFO    MainThread:24751 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-08 02:07:03,941 INFO    MainThread:24751 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-08 02:07:03,945 INFO    MainThread:24751 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-08 02:07:03,946 INFO    MainThread:24751 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-08 02:07:04,129 INFO    MainThread:24751 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/2drvneja
+2022-10-08 02:07:04,130 INFO    MainThread:24751 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-08 02:07:04,130 INFO    MainThread:24751 [wandb_run.py:_restore():1932] restore
+2022-10-08 02:07:06,450 INFO    MainThread:24751 [wandb_run.py:_restore():1938] restore done
+2022-10-08 02:07:09,951 INFO    MainThread:24751 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-08 02:07:09,951 INFO    MainThread:24751 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-08 02:07:09,955 INFO    MainThread:24751 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-08 02:25:28,783 INFO    MainThread:26272 [wandb_setup.py:_flush():68] Configure stats pid to 26272
+2022-10-08 02:25:28,784 INFO    MainThread:26272 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-08 02:25:28,784 INFO    MainThread:26272 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-08 02:25:28,784 INFO    MainThread:26272 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-08 02:25:28,784 INFO    MainThread:26272 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-08 02:25:28,784 INFO    MainThread:26272 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-08 02:25:28,785 INFO    MainThread:26272 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-08 02:25:28,785 INFO    MainThread:26272 [wandb_init.py:init():516] calling init triggers
+2022-10-08 02:25:28,785 INFO    MainThread:26272 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-08 02:25:28,785 INFO    MainThread:26272 [wandb_init.py:init():569] starting backend
+2022-10-08 02:25:28,785 INFO    MainThread:26272 [wandb_init.py:init():573] setting up manager
+2022-10-08 02:25:28,795 INFO    MainThread:26272 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-08 02:25:28,806 INFO    MainThread:26272 [wandb_init.py:init():580] backend started and connected
+2022-10-08 02:25:28,819 INFO    MainThread:26272 [wandb_init.py:init():658] updated telemetry
+2022-10-08 02:25:28,926 INFO    MainThread:26272 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-08 02:25:29,360 INFO    MainThread:26272 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-08 02:25:29,523 INFO    MainThread:26272 [wandb_run.py:_on_init():2004] got version response 
+2022-10-08 02:25:29,523 INFO    MainThread:26272 [wandb_init.py:init():728] starting run threads in backend
+2022-10-08 02:25:29,692 INFO    MainThread:26272 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-08 02:25:29,693 INFO    MainThread:26272 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-08 02:25:29,695 INFO    MainThread:26272 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-08 02:25:29,700 INFO    MainThread:26272 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-08 02:25:29,701 INFO    MainThread:26272 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-08 02:25:30,279 INFO    MainThread:26272 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/3ab3jwn3
+2022-10-08 02:25:30,279 INFO    MainThread:26272 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-08 02:25:30,280 INFO    MainThread:26272 [wandb_run.py:_restore():1932] restore
+2022-10-08 02:25:33,204 INFO    MainThread:26272 [wandb_run.py:_restore():1938] restore done
+2022-10-08 02:25:36,811 INFO    MainThread:26272 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-08 02:25:36,812 INFO    MainThread:26272 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-08 02:25:36,817 INFO    MainThread:26272 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-08 02:26:11,675 INFO    MainThread:26565 [wandb_setup.py:_flush():68] Configure stats pid to 26565
+2022-10-08 02:26:11,676 INFO    MainThread:26565 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-08 02:26:11,676 INFO    MainThread:26565 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-08 02:26:11,676 INFO    MainThread:26565 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-08 02:26:11,676 INFO    MainThread:26565 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-08 02:26:11,676 INFO    MainThread:26565 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-08 02:26:11,677 INFO    MainThread:26565 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-08 02:26:11,677 INFO    MainThread:26565 [wandb_init.py:init():516] calling init triggers
+2022-10-08 02:26:11,677 INFO    MainThread:26565 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-08 02:26:11,677 INFO    MainThread:26565 [wandb_init.py:init():569] starting backend
+2022-10-08 02:26:11,677 INFO    MainThread:26565 [wandb_init.py:init():573] setting up manager
+2022-10-08 02:26:11,690 INFO    MainThread:26565 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-08 02:26:11,697 INFO    MainThread:26565 [wandb_init.py:init():580] backend started and connected
+2022-10-08 02:26:11,710 INFO    MainThread:26565 [wandb_init.py:init():658] updated telemetry
+2022-10-08 02:26:11,801 INFO    MainThread:26565 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-08 02:26:12,236 INFO    MainThread:26565 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-08 02:26:12,402 INFO    MainThread:26565 [wandb_run.py:_on_init():2004] got version response 
+2022-10-08 02:26:12,402 INFO    MainThread:26565 [wandb_init.py:init():728] starting run threads in backend
+2022-10-08 02:26:12,573 INFO    MainThread:26565 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-08 02:26:12,574 INFO    MainThread:26565 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-08 02:26:12,576 INFO    MainThread:26565 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-08 02:26:12,581 INFO    MainThread:26565 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-08 02:26:12,582 INFO    MainThread:26565 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-08 02:26:12,646 INFO    MainThread:26565 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/ang3moq3
+2022-10-08 02:26:12,646 INFO    MainThread:26565 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-08 02:26:12,646 INFO    MainThread:26565 [wandb_run.py:_restore():1932] restore
+2022-10-08 02:26:15,584 INFO    MainThread:26565 [wandb_run.py:_restore():1938] restore done
+2022-10-08 02:26:18,878 INFO    MainThread:26565 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-08 02:26:18,878 INFO    MainThread:26565 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-08 02:26:18,882 INFO    MainThread:26565 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-08 02:34:29,297 INFO    MainThread:26749 [wandb_setup.py:_flush():68] Configure stats pid to 26749
+2022-10-08 02:34:29,297 INFO    MainThread:26749 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-08 02:34:29,298 INFO    MainThread:26749 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-08 02:34:29,298 INFO    MainThread:26749 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-08 02:34:29,298 INFO    MainThread:26749 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-08 02:34:29,298 INFO    MainThread:26749 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-08 02:34:29,299 INFO    MainThread:26749 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-08 02:34:29,299 INFO    MainThread:26749 [wandb_init.py:init():516] calling init triggers
+2022-10-08 02:34:29,299 INFO    MainThread:26749 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-08 02:34:29,299 INFO    MainThread:26749 [wandb_init.py:init():569] starting backend
+2022-10-08 02:34:29,299 INFO    MainThread:26749 [wandb_init.py:init():573] setting up manager
+2022-10-08 02:34:29,312 INFO    MainThread:26749 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-08 02:34:29,324 INFO    MainThread:26749 [wandb_init.py:init():580] backend started and connected
+2022-10-08 02:34:29,340 INFO    MainThread:26749 [wandb_init.py:init():658] updated telemetry
+2022-10-08 02:34:29,439 INFO    MainThread:26749 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-08 02:34:29,945 INFO    MainThread:26749 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-08 02:34:30,100 INFO    MainThread:26749 [wandb_run.py:_on_init():2004] got version response 
+2022-10-08 02:34:30,100 INFO    MainThread:26749 [wandb_init.py:init():728] starting run threads in backend
+2022-10-08 02:34:30,288 INFO    MainThread:26749 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-08 02:34:30,288 INFO    MainThread:26749 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-08 02:34:30,290 INFO    MainThread:26749 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-08 02:34:30,298 INFO    MainThread:26749 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-08 02:34:30,300 INFO    MainThread:26749 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-08 02:34:30,934 INFO    MainThread:26749 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/2qjhc67o
+2022-10-08 02:34:30,935 INFO    MainThread:26749 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-08 02:34:30,936 INFO    MainThread:26749 [wandb_run.py:_restore():1932] restore
+2022-10-08 02:34:33,303 INFO    MainThread:26749 [wandb_run.py:_restore():1938] restore done
+2022-10-08 02:34:36,399 INFO    MainThread:26749 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-08 02:34:36,399 INFO    MainThread:26749 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-08 02:34:36,404 INFO    MainThread:26749 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-08 02:36:31,172 INFO    MainThread:27057 [wandb_setup.py:_flush():68] Configure stats pid to 27057
+2022-10-08 02:36:31,172 INFO    MainThread:27057 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-08 02:36:31,173 INFO    MainThread:27057 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-08 02:36:31,173 INFO    MainThread:27057 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-08 02:36:31,173 INFO    MainThread:27057 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-08 02:36:31,173 INFO    MainThread:27057 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-08 02:36:31,174 INFO    MainThread:27057 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-08 02:36:31,174 INFO    MainThread:27057 [wandb_init.py:init():516] calling init triggers
+2022-10-08 02:36:31,174 INFO    MainThread:27057 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-08 02:36:31,174 INFO    MainThread:27057 [wandb_init.py:init():569] starting backend
+2022-10-08 02:36:31,174 INFO    MainThread:27057 [wandb_init.py:init():573] setting up manager
+2022-10-08 02:36:31,189 INFO    MainThread:27057 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-08 02:36:31,203 INFO    MainThread:27057 [wandb_init.py:init():580] backend started and connected
+2022-10-08 02:36:31,221 INFO    MainThread:27057 [wandb_init.py:init():658] updated telemetry
+2022-10-08 02:36:31,334 INFO    MainThread:27057 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-08 02:36:31,799 INFO    MainThread:27057 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-08 02:36:31,964 INFO    MainThread:27057 [wandb_run.py:_on_init():2004] got version response 
+2022-10-08 02:36:31,964 INFO    MainThread:27057 [wandb_init.py:init():728] starting run threads in backend
+2022-10-08 02:36:32,126 INFO    MainThread:27057 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-08 02:36:32,127 INFO    MainThread:27057 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-08 02:36:32,128 INFO    MainThread:27057 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-08 02:36:32,132 INFO    MainThread:27057 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-08 02:36:32,133 INFO    MainThread:27057 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-08 02:36:32,654 INFO    MainThread:27057 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/2gd19woa
+2022-10-08 02:36:32,655 INFO    MainThread:27057 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-08 02:36:32,655 INFO    MainThread:27057 [wandb_run.py:_restore():1932] restore
+2022-10-08 02:36:35,150 INFO    MainThread:27057 [wandb_run.py:_restore():1938] restore done
+2022-10-08 02:36:38,162 INFO    MainThread:27057 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-08 02:36:38,162 INFO    MainThread:27057 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-08 02:36:38,177 INFO    MainThread:27057 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-08 02:42:32,043 INFO    MainThread:27565 [wandb_setup.py:_flush():68] Configure stats pid to 27565
+2022-10-08 02:42:32,043 INFO    MainThread:27565 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-08 02:42:32,044 INFO    MainThread:27565 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-08 02:42:32,044 INFO    MainThread:27565 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-08 02:42:32,044 INFO    MainThread:27565 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-08 02:42:32,044 INFO    MainThread:27565 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-08 02:42:32,044 INFO    MainThread:27565 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-08 02:42:32,044 INFO    MainThread:27565 [wandb_init.py:init():516] calling init triggers
+2022-10-08 02:42:32,045 INFO    MainThread:27565 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-08 02:42:32,045 INFO    MainThread:27565 [wandb_init.py:init():569] starting backend
+2022-10-08 02:42:32,045 INFO    MainThread:27565 [wandb_init.py:init():573] setting up manager
+2022-10-08 02:42:32,057 INFO    MainThread:27565 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-08 02:42:32,072 INFO    MainThread:27565 [wandb_init.py:init():580] backend started and connected
+2022-10-08 02:42:32,088 INFO    MainThread:27565 [wandb_init.py:init():658] updated telemetry
+2022-10-08 02:42:32,184 INFO    MainThread:27565 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-08 02:42:32,795 INFO    MainThread:27565 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-08 02:42:32,977 INFO    MainThread:27565 [wandb_run.py:_on_init():2004] got version response 
+2022-10-08 02:42:32,977 INFO    MainThread:27565 [wandb_init.py:init():728] starting run threads in backend
+2022-10-08 02:42:33,140 INFO    MainThread:27565 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-08 02:42:33,141 INFO    MainThread:27565 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-08 02:42:33,142 INFO    MainThread:27565 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-08 02:42:33,147 INFO    MainThread:27565 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-08 02:42:33,148 INFO    MainThread:27565 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-08 02:42:33,694 INFO    MainThread:27565 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/jtciop0c
+2022-10-08 02:42:33,694 INFO    MainThread:27565 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-08 02:42:33,695 INFO    MainThread:27565 [wandb_run.py:_restore():1932] restore
+2022-10-08 02:42:36,659 INFO    MainThread:27565 [wandb_run.py:_restore():1938] restore done
+2022-10-08 02:42:40,148 INFO    MainThread:27565 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-08 02:42:40,148 INFO    MainThread:27565 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-08 02:42:40,157 INFO    MainThread:27565 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-10 15:37:49,887 INFO    MainThread:28261 [wandb_setup.py:_flush():68] Configure stats pid to 28261
+2022-10-10 15:37:49,888 INFO    MainThread:28261 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-10 15:37:49,888 INFO    MainThread:28261 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-10 15:37:49,888 INFO    MainThread:28261 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-10 15:37:49,888 INFO    MainThread:28261 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-10 15:37:49,889 INFO    MainThread:28261 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-10 15:37:49,889 INFO    MainThread:28261 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-10 15:37:49,889 INFO    MainThread:28261 [wandb_init.py:init():516] calling init triggers
+2022-10-10 15:37:49,889 INFO    MainThread:28261 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-10 15:37:49,890 INFO    MainThread:28261 [wandb_init.py:init():569] starting backend
+2022-10-10 15:37:49,890 INFO    MainThread:28261 [wandb_init.py:init():573] setting up manager
+2022-10-10 15:37:49,902 INFO    MainThread:28261 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-10 15:37:49,932 INFO    MainThread:28261 [wandb_init.py:init():580] backend started and connected
+2022-10-10 15:37:49,946 INFO    MainThread:28261 [wandb_init.py:init():658] updated telemetry
+2022-10-10 15:37:50,056 INFO    MainThread:28261 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-10 15:37:50,554 INFO    MainThread:28261 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-10 15:37:50,712 INFO    MainThread:28261 [wandb_run.py:_on_init():2004] got version response 
+2022-10-10 15:37:50,713 INFO    MainThread:28261 [wandb_init.py:init():728] starting run threads in backend
+2022-10-10 15:37:50,950 INFO    MainThread:28261 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-10 15:37:50,950 INFO    MainThread:28261 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-10 15:37:50,951 INFO    MainThread:28261 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-10 15:37:50,962 INFO    MainThread:28261 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-10 15:37:50,963 INFO    MainThread:28261 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-10 15:37:51,644 INFO    MainThread:28261 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/3psi4t1p
+2022-10-10 15:37:51,644 INFO    MainThread:28261 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-10 15:37:51,645 INFO    MainThread:28261 [wandb_run.py:_restore():1932] restore
+2022-10-10 15:37:54,468 INFO    MainThread:28261 [wandb_run.py:_restore():1938] restore done
+2022-10-10 15:37:57,981 INFO    MainThread:28261 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-10 15:37:57,981 INFO    MainThread:28261 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-10 15:37:58,018 INFO    MainThread:28261 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-10 15:39:53,837 INFO    MainThread:28511 [wandb_setup.py:_flush():68] Configure stats pid to 28511
+2022-10-10 15:39:53,838 INFO    MainThread:28511 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-10 15:39:53,838 INFO    MainThread:28511 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-10 15:39:53,838 INFO    MainThread:28511 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-10 15:39:53,840 INFO    MainThread:28511 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-10 15:39:53,840 INFO    MainThread:28511 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-10 15:39:53,841 INFO    MainThread:28511 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-10 15:39:53,841 INFO    MainThread:28511 [wandb_init.py:init():516] calling init triggers
+2022-10-10 15:39:53,841 INFO    MainThread:28511 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-10 15:39:53,841 INFO    MainThread:28511 [wandb_init.py:init():569] starting backend
+2022-10-10 15:39:53,841 INFO    MainThread:28511 [wandb_init.py:init():573] setting up manager
+2022-10-10 15:39:53,852 INFO    MainThread:28511 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-10 15:39:53,865 INFO    MainThread:28511 [wandb_init.py:init():580] backend started and connected
+2022-10-10 15:39:53,883 INFO    MainThread:28511 [wandb_init.py:init():658] updated telemetry
+2022-10-10 15:39:53,992 INFO    MainThread:28511 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-10 15:39:54,368 INFO    MainThread:28511 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-10 15:39:54,526 INFO    MainThread:28511 [wandb_run.py:_on_init():2004] got version response 
+2022-10-10 15:39:54,526 INFO    MainThread:28511 [wandb_init.py:init():728] starting run threads in backend
+2022-10-10 15:39:54,707 INFO    MainThread:28511 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-10 15:39:54,707 INFO    MainThread:28511 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-10 15:39:54,710 INFO    MainThread:28511 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-10 15:39:54,716 INFO    MainThread:28511 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-10 15:39:54,718 INFO    MainThread:28511 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-10 15:39:55,273 INFO    MainThread:28511 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/1hqrhptx
+2022-10-10 15:39:55,273 INFO    MainThread:28511 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-10 15:39:55,274 INFO    MainThread:28511 [wandb_run.py:_restore():1932] restore
+2022-10-10 15:39:57,733 INFO    MainThread:28511 [wandb_run.py:_restore():1938] restore done
+2022-10-10 15:40:00,750 INFO    MainThread:28511 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-10 15:40:00,751 INFO    MainThread:28511 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-10 15:40:00,762 INFO    MainThread:28511 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-10 15:41:36,032 INFO    MainThread:28806 [wandb_setup.py:_flush():68] Configure stats pid to 28806
+2022-10-10 15:41:36,032 INFO    MainThread:28806 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-10 15:41:36,032 INFO    MainThread:28806 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-10 15:41:36,032 INFO    MainThread:28806 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-10 15:41:36,032 INFO    MainThread:28806 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-10 15:41:36,033 INFO    MainThread:28806 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-10 15:41:36,033 INFO    MainThread:28806 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-10 15:41:36,033 INFO    MainThread:28806 [wandb_init.py:init():516] calling init triggers
+2022-10-10 15:41:36,034 INFO    MainThread:28806 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-10 15:41:36,034 INFO    MainThread:28806 [wandb_init.py:init():569] starting backend
+2022-10-10 15:41:36,034 INFO    MainThread:28806 [wandb_init.py:init():573] setting up manager
+2022-10-10 15:41:36,047 INFO    MainThread:28806 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-10 15:41:36,058 INFO    MainThread:28806 [wandb_init.py:init():580] backend started and connected
+2022-10-10 15:41:36,072 INFO    MainThread:28806 [wandb_init.py:init():658] updated telemetry
+2022-10-10 15:41:36,160 INFO    MainThread:28806 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-10 15:41:36,549 INFO    MainThread:28806 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-10 15:41:36,705 INFO    MainThread:28806 [wandb_run.py:_on_init():2004] got version response 
+2022-10-10 15:41:36,705 INFO    MainThread:28806 [wandb_init.py:init():728] starting run threads in backend
+2022-10-10 15:41:36,869 INFO    MainThread:28806 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-10 15:41:36,869 INFO    MainThread:28806 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-10 15:41:36,871 INFO    MainThread:28806 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-10 15:41:36,876 INFO    MainThread:28806 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-10 15:41:36,877 INFO    MainThread:28806 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-10 15:41:37,558 INFO    MainThread:28806 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/y4zaiqtd
+2022-10-10 15:41:37,558 INFO    MainThread:28806 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-10 15:41:37,559 INFO    MainThread:28806 [wandb_run.py:_restore():1932] restore
+2022-10-10 15:41:40,382 INFO    MainThread:28806 [wandb_run.py:_restore():1938] restore done
+2022-10-10 15:41:43,984 INFO    MainThread:28806 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-10 15:41:43,985 INFO    MainThread:28806 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-10 15:41:43,995 INFO    MainThread:28806 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-10 16:24:50,372 INFO    MainThread:31079 [wandb_setup.py:_flush():68] Configure stats pid to 31079
+2022-10-10 16:24:50,373 INFO    MainThread:31079 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-10 16:24:50,373 INFO    MainThread:31079 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-10 16:24:50,373 INFO    MainThread:31079 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-10 16:24:50,374 INFO    MainThread:31079 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-10 16:24:50,374 INFO    MainThread:31079 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-10 16:24:50,374 INFO    MainThread:31079 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-10 16:24:50,374 INFO    MainThread:31079 [wandb_init.py:init():516] calling init triggers
+2022-10-10 16:24:50,374 INFO    MainThread:31079 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-10 16:24:50,374 INFO    MainThread:31079 [wandb_init.py:init():569] starting backend
+2022-10-10 16:24:50,375 INFO    MainThread:31079 [wandb_init.py:init():573] setting up manager
+2022-10-10 16:24:50,384 INFO    MainThread:31079 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-10 16:24:50,394 INFO    MainThread:31079 [wandb_init.py:init():580] backend started and connected
+2022-10-10 16:24:50,412 INFO    MainThread:31079 [wandb_init.py:init():658] updated telemetry
+2022-10-10 16:24:50,513 INFO    MainThread:31079 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-10 16:24:50,960 INFO    MainThread:31079 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-10 16:24:51,150 INFO    MainThread:31079 [wandb_run.py:_on_init():2004] got version response 
+2022-10-10 16:24:51,151 INFO    MainThread:31079 [wandb_init.py:init():728] starting run threads in backend
+2022-10-10 16:24:51,302 INFO    MainThread:31079 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-10 16:24:51,303 INFO    MainThread:31079 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-10 16:24:51,305 INFO    MainThread:31079 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-10 16:24:51,309 INFO    MainThread:31079 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-10 16:24:51,311 INFO    MainThread:31079 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-10 16:24:51,348 INFO    MainThread:31079 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/3vpftnoe
+2022-10-10 16:24:51,348 INFO    MainThread:31079 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-10 16:24:51,348 INFO    MainThread:31079 [wandb_run.py:_restore():1932] restore
+2022-10-10 16:24:53,812 INFO    MainThread:31079 [wandb_run.py:_restore():1938] restore done
+2022-10-10 16:24:57,721 INFO    MainThread:31079 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-10 16:24:57,721 INFO    MainThread:31079 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-10 16:24:57,724 INFO    MainThread:31079 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-10 16:28:17,842 INFO    MainThread:31304 [wandb_setup.py:_flush():68] Configure stats pid to 31304
+2022-10-10 16:28:17,842 INFO    MainThread:31304 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-10 16:28:17,842 INFO    MainThread:31304 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-10 16:28:17,842 INFO    MainThread:31304 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-10 16:28:17,842 INFO    MainThread:31304 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-10 16:28:17,843 INFO    MainThread:31304 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-10 16:28:17,843 INFO    MainThread:31304 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-10 16:28:17,843 INFO    MainThread:31304 [wandb_init.py:init():516] calling init triggers
+2022-10-10 16:28:17,843 INFO    MainThread:31304 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-10 16:28:17,844 INFO    MainThread:31304 [wandb_init.py:init():569] starting backend
+2022-10-10 16:28:17,844 INFO    MainThread:31304 [wandb_init.py:init():573] setting up manager
+2022-10-10 16:28:17,853 INFO    MainThread:31304 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-10 16:28:17,864 INFO    MainThread:31304 [wandb_init.py:init():580] backend started and connected
+2022-10-10 16:28:17,879 INFO    MainThread:31304 [wandb_init.py:init():658] updated telemetry
+2022-10-10 16:28:17,975 INFO    MainThread:31304 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-10 16:28:18,415 INFO    MainThread:31304 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-10 16:28:18,570 INFO    MainThread:31304 [wandb_run.py:_on_init():2004] got version response 
+2022-10-10 16:28:18,570 INFO    MainThread:31304 [wandb_init.py:init():728] starting run threads in backend
+2022-10-10 16:28:18,735 INFO    MainThread:31304 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-10 16:28:18,736 INFO    MainThread:31304 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-10 16:28:18,738 INFO    MainThread:31304 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-10 16:28:18,743 INFO    MainThread:31304 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-10 16:28:18,744 INFO    MainThread:31304 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-10 16:28:19,392 INFO    MainThread:31304 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/2u9xae7z
+2022-10-10 16:28:19,392 INFO    MainThread:31304 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-10 16:28:19,393 INFO    MainThread:31304 [wandb_run.py:_restore():1932] restore
+2022-10-10 16:28:22,252 INFO    MainThread:31304 [wandb_run.py:_restore():1938] restore done
+2022-10-10 16:28:25,832 INFO    MainThread:31304 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-10 16:28:25,833 INFO    MainThread:31304 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-10 16:28:25,941 INFO    MainThread:31304 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-10-10 16:30:16,605 INFO    MainThread:31581 [wandb_setup.py:_flush():68] Configure stats pid to 31581
+2022-10-10 16:30:16,606 INFO    MainThread:31581 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/.config/wandb/settings
+2022-10-10 16:30:16,606 INFO    MainThread:31581 [wandb_setup.py:_flush():68] Loading settings from /home/freddiev4/zenml_challenge/wandb/settings
+2022-10-10 16:30:16,606 INFO    MainThread:31581 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'api_key': '***REDACTED***'}
+2022-10-10 16:30:16,606 INFO    MainThread:31581 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'src/pipeline.py', 'program': '/home/freddiev4/zenml_challenge/./src/pipeline.py'}
+2022-10-10 16:30:16,606 INFO    MainThread:31581 [wandb_init.py:_log_setup():476] Logging user logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug.log
+2022-10-10 16:30:16,607 INFO    MainThread:31581 [wandb_init.py:_log_setup():477] Logging internal logs to /home/freddiev4/zenml_challenge/wandb/run-None-None/logs/debug-internal.log
+2022-10-10 16:30:16,607 INFO    MainThread:31581 [wandb_init.py:init():516] calling init triggers
+2022-10-10 16:30:16,607 INFO    MainThread:31581 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-10-10 16:30:16,607 INFO    MainThread:31581 [wandb_init.py:init():569] starting backend
+2022-10-10 16:30:16,607 INFO    MainThread:31581 [wandb_init.py:init():573] setting up manager
+2022-10-10 16:30:16,616 INFO    MainThread:31581 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-10 16:30:16,625 INFO    MainThread:31581 [wandb_init.py:init():580] backend started and connected
+2022-10-10 16:30:16,644 INFO    MainThread:31581 [wandb_init.py:init():658] updated telemetry
+2022-10-10 16:30:16,746 INFO    MainThread:31581 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-10-10 16:30:17,204 INFO    MainThread:31581 [wandb_run.py:_on_init():2000] communicating current version
+2022-10-10 16:30:17,384 INFO    MainThread:31581 [wandb_run.py:_on_init():2004] got version response 
+2022-10-10 16:30:17,385 INFO    MainThread:31581 [wandb_init.py:init():728] starting run threads in backend
+2022-10-10 16:30:17,546 INFO    MainThread:31581 [wandb_run.py:_console_start():1980] atexit reg
+2022-10-10 16:30:17,546 INFO    MainThread:31581 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.REDIRECT
+2022-10-10 16:30:17,548 INFO    MainThread:31581 [wandb_run.py:_redirect():1855] Redirecting console.
+2022-10-10 16:30:17,552 INFO    MainThread:31581 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-10-10 16:30:17,553 INFO    MainThread:31581 [wandb_init.py:init():765] run started, returning control to user process
+2022-10-10 16:30:18,082 INFO    MainThread:31581 [wandb_run.py:_finish():1746] finishing run freddiev4/zenml_challenge/1vfaqtb9
+2022-10-10 16:30:18,082 INFO    MainThread:31581 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-10-10 16:30:18,083 INFO    MainThread:31581 [wandb_run.py:_restore():1932] restore
+2022-10-10 16:30:21,056 INFO    MainThread:31581 [wandb_run.py:_restore():1938] restore done
+2022-10-10 16:30:24,867 INFO    MainThread:31581 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-10-10 16:30:24,868 INFO    MainThread:31581 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-10-10 16:30:24,891 INFO    MainThread:31581 [wandb_run.py:_footer_sync_info():3333] logging synced files
