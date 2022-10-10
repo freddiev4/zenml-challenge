@@ -1,3 +1,5 @@
+import joblib
+
 from datetime import datetime
 
 import numpy as np
@@ -42,7 +44,10 @@ def data_loader() -> Output(
     y_val=np.ndarray,
     y_test=np.ndarray,
 ):
-    """Loads the breast cancer dataset as numpy arrays."""
+    """
+    Loads the breast cancer dataset as numpy arrays.
+    Doesn't do any data cleaning / feature engineering.
+    """
     bunch = load_breast_cancer()
     samples = bunch.data
     labels = bunch.target
@@ -71,7 +76,9 @@ def data_loader() -> Output(
 def knn_trainer(
     x_train: np.ndarray,
     y_train: np.ndarray,
-) -> ClassifierMixin:
+) -> Output(
+    model=ClassifierMixin,
+):
     """Train a K-Nearest neighbors classifier."""
     model = KNeighborsClassifier()
     model.fit(x_train, y_train)
@@ -88,22 +95,39 @@ def knn_evaluator(
     model: ClassifierMixin,
     x_val: np.ndarray,
     y_val: np.ndarray,
-) -> None:
+) -> Output(
+    evaluated_model=ClassifierMixin,
+):
+    # TODO: Add logic here for selecting the best model from 
+    # many different models / hyperparameter tuning
     predictions = model.predict(x_val)
 
     f1 = f1_score(y_val, predictions, average='weighted')
-    avg_precision = average_precision_score(y_val, predictions, average='weighted')
     auc = roc_auc_score(y_val, predictions, average='weighted')
 
     wandb.log({
         "f1_score": f1,
-        "avg_precision": avg_precision,
         "roc_auc": auc,
     })
 
+    return model
+
+@step
+def serialize_model(
+    model: ClassifierMixin,
+) -> None:
+    # TODO: Add logic for serializing model + uploading somewhere
+    # only if the model performance meets certain thresholds
+    joblib.dump(model, "knn_model.joblib")
+
 
 @pipeline
-def knn_pipeline(step_1, step_2, step_3):
+def knn_breast_cancer_pipeline(
+    data_loader_step, 
+    model_training_step, 
+    model_eval_step, 
+    model_serialization_step,
+):
     (
         x_train,
         x_val,
@@ -111,25 +135,28 @@ def knn_pipeline(step_1, step_2, step_3):
         y_train,
         y_val,
         y_test
-    ) = step_1()
+    ) = data_loader_step()
 
-    model = step_2(
+    trained_model = model_training_step(
         x_train=x_train,
         y_train=y_train,
     )
 
     # TODO: Serialize model
-    step_3(
-        model=model,
+    evaluated_model = model_eval_step(
+        model=trained_model,
         x_val=x_val,
         y_val=y_val,
     )
 
-knn_pipeline_instance = knn_pipeline(
-    step_1=data_loader(),
-    step_2=knn_trainer(),
-    step_3=knn_evaluator(),
+    model_serialization_step(model=evaluated_model)
+
+knn_pipeline_instance = knn_breast_cancer_pipeline(
+    data_loader_step=data_loader(),
+    model_training_step=knn_trainer(),
+    model_eval_step=knn_evaluator(),
+    model_serialization_step=serialize_model(),
 )
 
 
-knn_pipeline_instance.run(run_name=f'knn-train-eval-pipeline{datetime.now()}')
+knn_pipeline_instance.run(run_name=f'knn-breast-cancer-pipeline-{datetime.now()}')
