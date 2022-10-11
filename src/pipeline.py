@@ -1,14 +1,17 @@
 import joblib
 
 from datetime import datetime
+from typing import List
 
 import numpy as np
 
 from sklearn.base import ClassifierMixin
 from sklearn.datasets import load_breast_cancer
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import (
     train_test_split,
 )
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
     average_precision_score,
     f1_score,
@@ -73,44 +76,70 @@ def data_loader() -> Output(
 
 
 @step
-def knn_trainer(
+def model_trainer(
     x_train: np.ndarray,
     y_train: np.ndarray,
 ) -> Output(
-    model=ClassifierMixin,
+    trained_models=List[ClassifierMixin],
 ):
-    """Train a K-Nearest neighbors classifier."""
-    model = KNeighborsClassifier()
-    model.fit(x_train, y_train)
-    return model
+    """Train a set of classifiers."""
+    models = [
+        LogisticRegression(max_iter=1000),
+        KNeighborsClassifier(),
+        RandomForestClassifier(),
+    ]
+    trained_models = []
+    for model in models:
+        trained_models.append(
+            model.fit(x_train, y_train)
+        )
+
+    return trained_models
 
 
 @step(
     experiment_tracker=EXPERIMENT_TRACKER,
     settings={
-        "experiment_tracker.wandb":WANDB_SETTINGS,
+        "experiment_tracker.wandb": WANDB_SETTINGS,
     },
 )
-def knn_evaluator(
-    model: ClassifierMixin,
+def model_evaluator(
+    trained_models: List[ClassifierMixin],
     x_val: np.ndarray,
     y_val: np.ndarray,
 ) -> Output(
-    evaluated_model=ClassifierMixin,
+    best_model=ClassifierMixin,
 ):
-    # TODO: Add logic here for selecting the best model from 
-    # many different models / hyperparameter tuning
-    predictions = model.predict(x_val)
+    """
+    Evaluates several different models, and returns the best performing
+    model based on f1 score (arbitrarily selected from classification metrics).
 
-    f1 = f1_score(y_val, predictions, average='weighted')
-    auc = roc_auc_score(y_val, predictions, average='weighted')
+    Doesn't do any hyperparameter tuning.
+    """
+    model_to_scores = {}
+    
+    for model in trained_models:
+        predictions = model.predict(x_val)
+
+        score = f1_score(y_val, predictions, average='weighted')
+
+        wandb.log({
+            "f1_score": score,
+        })
+
+        model_to_scores[model] = score
+
+    def select_best_model(model_to_scores):
+        # return max(model_to_scores, key=model_to_scores.get)
+        return model_to_scores.keys()[0]
+
+    best_model = select_best_model(model_to_scores)
 
     wandb.log({
-        "f1_score": f1,
-        "roc_auc": auc,
+        "best_model_score": model_to_scores[best_model],
     })
+    return best_model
 
-    return model
 
 @step
 def serialize_model(
@@ -118,11 +147,11 @@ def serialize_model(
 ) -> None:
     # TODO: Add logic for serializing model + uploading somewhere
     # only if the model performance meets certain thresholds
-    joblib.dump(model, "knn_model.joblib")
+    joblib.dump(model, "best_model.joblib")
 
 
-@pipeline
-def knn_breast_cancer_pipeline(
+@pipeline(name='breast_cancer_model_selection_pipeline')
+def breast_cancer_model_selection_pipeline(
     data_loader_step, 
     model_training_step, 
     model_eval_step, 
@@ -137,26 +166,39 @@ def knn_breast_cancer_pipeline(
         y_test
     ) = data_loader_step()
 
-    trained_model = model_training_step(
+    trained_models = model_training_step(
         x_train=x_train,
         y_train=y_train,
     )
 
-    # TODO: Serialize model
-    evaluated_model = model_eval_step(
-        model=trained_model,
+    best_model = model_eval_step(
+        trained_models=trained_models,
         x_val=x_val,
         y_val=y_val,
     )
 
-    model_serialization_step(model=evaluated_model)
+    model_serialization_step(model=best_model)
 
-knn_pipeline_instance = knn_breast_cancer_pipeline(
+
+# TODO: Add model deployment
+pipeline_instance = breast_cancer_model_selection_pipeline(
     data_loader_step=data_loader(),
-    model_training_step=knn_trainer(),
-    model_eval_step=knn_evaluator(),
+    model_training_step=model_trainer(),
+    model_eval_step=model_evaluator(),
     model_serialization_step=serialize_model(),
 )
 
+from contextlib import contextmanager
 
-knn_pipeline_instance.run(run_name=f'knn-breast-cancer-pipeline-{datetime.now()}')
+@contextmanager
+def postmortem_pdb():
+    try:
+        yield
+    except Exception as exc:
+        import pdb
+        pdb.post_mortem()
+
+
+# with postmortem_pdb():
+pipeline_instance.run(run_name=f'breast-cancer-pipeline-{datetime.now()}')
+
