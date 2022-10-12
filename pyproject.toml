@@ -12,6 +12,9 @@ zenml = {extras = ["server", "stacks"], version = "^0.20.2"}
 scikit-learn = "^1.1.2"
 wandb = "^0.13.4"
 joblib = "^1.2.0"
+mlflow = {extras = ["extras"], version = "^1.29.0"}
+itsdangerous = "2.0.1"
+Werkzeug = "2.0.3"
 
 
 [tool.poetry.group.dev.dependencies]
