@@ -71,7 +71,6 @@ def data_loader() -> Output(
         x_test,
         y_test,
         test_size=TEST_SPLIT_RATIO / (TEST_SPLIT_RATIO + VALIDATION_SPLIT_RATIO),
-        # shuffle=False,
         random_state=RANDOM_STATE,
     )
     return x_train, x_val, x_test, y_train, y_val, y_test
@@ -168,10 +167,9 @@ def serialize_best_model(
 @step
 def model_deployment_decision_step() -> Output(
     deployment_decision=bool, 
-    # deployment_params=MLFlowDeployerParameters,
 ):
     deployment_decision = True
-    return deployment_decision#, deployment_params
+    return deployment_decision
 
 
 @pipeline(name='breast_cancer_model_selection_pipeline_v3')
