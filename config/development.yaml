@@ -9,14 +9,26 @@ components:
     user: 44fbed7a-9cf3-4bd2-8c8b-5e84573239ba
   experiment_tracker:
     configuration:
-      api_key: 'FILLMEIN'
-      entity: freddiev4
-      project_name: zenml_challenge
-    flavor: wandb
-    id: aba97e58-7bb7-451e-a77a-81e7bfc57904
+      databricks_host: null
+      tracking_insecure_tls: false
+      tracking_password: null
+      tracking_token: null
+      tracking_uri: null
+      tracking_username: null
+    flavor: mlflow
+    id: 09a18e6c-4a62-4612-9001-809faea95205
     is_shared: false
-    name: wandb_experiment_tracker
+    name: mlflow_tracker
     type: experiment_tracker
+    user: 44fbed7a-9cf3-4bd2-8c8b-5e84573239ba
+  model_deployer:
+    configuration:
+      service_path: ''
+    flavor: mlflow
+    id: a9353e10-99a9-4520-8f26-8e9fc495834e
+    is_shared: false
+    name: mlflow_deployer
+    type: model_deployer
     user: 44fbed7a-9cf3-4bd2-8c8b-5e84573239ba
   orchestrator:
     configuration: {}
@@ -26,5 +38,5 @@ components:
     name: default
     type: orchestrator
     user: 44fbed7a-9cf3-4bd2-8c8b-5e84573239ba
-stack_name: wandb-ops-setup
+stack_name: local_with_mlflow
 zenml_version: 0.20.2
