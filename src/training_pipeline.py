@@ -161,7 +161,7 @@ def serialize_best_model(
 ) -> None:
     # TODO: Add logic for serializing model + uploading somewhere
     # only if the model performance meets certain thresholds
-    joblib.dump(best_model, "best_model.joblib")
+    joblib.dump(best_model, f"best_model_{type(best_model).__name__.lower()}.joblib")
 
 
 
