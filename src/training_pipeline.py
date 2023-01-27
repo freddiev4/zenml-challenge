@@ -246,16 +246,5 @@ pipeline_instance = breast_cancer_model_selection_pipeline(
 )
 
 if __name__ == '__main__':
-    from contextlib import contextmanager
-
-    @contextmanager
-    def postmortem_pdb():
-        try:
-            yield
-        except Exception as exc:
-            import pdb
-            pdb.post_mortem()
-
-    # with postmortem_pdb():
     pipeline_instance.run(run_name=f'breast-cancer-pipeline-{datetime.now()}')
 
