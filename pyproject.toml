@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "zenml-challenge"
 version = "0.1.0"
-description = ""
+description = "A project for learning more about the zenml stack"
 authors = ["Freddie Vargus <fjv41995@gmail.com>"]
 readme = "README.md"
 packages = [{include = "zenml_challenge"}]
